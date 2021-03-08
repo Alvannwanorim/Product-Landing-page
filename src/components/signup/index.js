@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import {
   Container,
   Form,
@@ -12,9 +11,9 @@ import {
   Icon,
   Text,
   LinkR,
-} from "./SigninElements";
+} from "./SignupElement";
 
-function SignIn() {
+function SignUp() {
   return (
     <Container>
       <FormWrap>
@@ -22,15 +21,18 @@ function SignIn() {
 
         <FormContent>
           <Form action="#">
-            <FormH1>Sign in to your Account</FormH1>
+            <FormH1>Signup</FormH1>
+            <FormLabel htmlFor="for">Name</FormLabel>
+            <FormInput type="text" placeholder="Name" required />
             <FormLabel htmlFor="for">Email</FormLabel>
             <FormInput type="email" required />
             <FormLabel htmlFor="for">Password</FormLabel>
             <FormInput type="password" required />
-            <FormButton type="submit">continue</FormButton>
-            <Text>Forgot password?</Text>
+            <FormLabel htmlFor="for">Confirm Password</FormLabel>
+            <FormInput type="password" required />
+            <FormButton type="submit">Sign Up</FormButton>
             <Text>
-              Don't have an acoount? <LinkR to="/signup">Sign Up</LinkR> Instead
+              Already a user? <LinkR to="/signin">Sign In</LinkR>
             </Text>
           </Form>
         </FormContent>
@@ -39,4 +41,4 @@ function SignIn() {
   );
 }
 
-export default SignIn;
+export default SignUp;

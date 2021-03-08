@@ -17,6 +17,9 @@ export const Container = styled.div`
     rgba(1, 201, 150, 1)
   );
 `;
+export const LinkR = styled(Link)`
+  color: lightblue;
+`;
 
 export const FormWrap = styled.div`
   height: 100%;
@@ -30,9 +33,6 @@ export const FormWrap = styled.div`
   }
 `;
 
-export const LinkR = styled(Link)`
-  color: lightblue;
-`;
 export const Icon = styled(Link)`
   margin-left: 32px;
   margin-top: 32px;
